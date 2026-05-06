@@ -16,21 +16,10 @@
 - `mkdir adresar` — nový adresář
 
 ## 📦 Instalace aplikací
-### APT (Ubuntu/Debian)
 - `sudo apt update` — aktualizace seznamu balíčků
 - `sudo apt upgrade` — aktualizace systému
 - `sudo apt install <balíček>` — instalace
 - `sudo apt remove <balíček>` — odinstalace
-
-### DNF (Fedora)
-- `sudo dnf install <balíček>` — instalace
-- `sudo dnf remove <balíček>` — odinstalace
-- `sudo dnf update` — aktualizace systému
-
-### Pacman (Arch)
-- `sudo pacman -S <balíček>` — instalace
-- `sudo pacman -R <balíček>` — odinstalace
-- `sudo pacman -Syu` — kompletní update
 
 ## 🔧 Systém
 - `uname -a` — info o kernelu
