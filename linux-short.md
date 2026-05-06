@@ -3,68 +3,70 @@
 ## 📁 Navigace
 - `pwd` — aktuální cesta
 - `ls` — výpis adresáře  
-  - `ls -l` (detailně), `ls -a` (skryté)
+  - `ls -l` — detailní výpis  
+  - `ls -a` — zobrazí i skryté soubory
 - `cd /cesta` — změna adresáře  
 - `cd ..` — o úroveň výš  
 - `cd ~` — domovský adresář
 
 ## 📄 Soubory a adresáře
-- `cp zdroj cíl` — kopírování
-- `mv zdroj cíl` — přesun/rename
-- `rm soubor` — smazání
-- `rm -r adresar` — rekurzivní mazání
-- `touch soubor` — nový soubor
-- `mkdir adresar` — nový adresář
+- `cp zdroj cíl` — kopírování souboru/adresáře
+- `mv zdroj cíl` — přesun nebo přejmenování
+- `rm soubor` — smazání souboru
+- `rm -r adresar` — rekurzivní mazání adresáře
+- `touch soubor` — vytvoření prázdného souboru
+- `mkdir adresar` — vytvoření adresáře
 
 ## 📦 Instalace aplikací
+
 ### APT (Ubuntu/Debian)
-- `sudo apt update`
-- `sudo apt upgrade`
-- `sudo apt install <balíček>`
-- `sudo apt remove <balíček>`
+- `sudo apt update` — aktualizuje seznam balíčků
+- `sudo apt upgrade` — nainstaluje dostupné aktualizace
+- `sudo apt install <balíček>` — nainstaluje aplikaci
+- `sudo apt remove <balíček>` — odinstaluje aplikaci (ponechá konfiguraci)
 
 ### DNF (Fedora)
-- `sudo dnf install <balíček>`
-- `sudo dnf remove <balíček>`
-- `sudo dnf update`
+- `sudo dnf install <balíček>` — nainstaluje aplikaci
+- `sudo dnf remove <balíček>` — odinstaluje aplikaci
+- `sudo dnf update` — aktualizuje systém
 
 ### Pacman (Arch)
-- `sudo pacman -S <balíček>`
-- `sudo pacman -R <balíček>`
-- `sudo pacman -Syu` — update systému
+- `sudo pacman -S <balíček>` — nainstaluje aplikaci
+- `sudo pacman -R <balíček>` — odinstaluje aplikaci
+- `sudo pacman -Syu` — kompletní update systému (sync + refresh + upgrade)
 
 ## 🔧 Systém
-- `uname -a` — info o kernelu
-- `top` / `htop` — procesy
-- `df -h` — disky
-- `free -h` — RAM
-- `whoami` — uživatel
-- `id` — UID/GID
+- `uname -a` — informace o kernelu
+- `top` / `htop` — běžící procesy
+- `df -h` — využití disků
+- `free -h` — využití RAM
+- `whoami` — aktuální uživatel
+- `id` — UID/GID a skupiny
 
 ## 📚 Čtení souborů
-- `cat soubor` — celý obsah
+- `cat soubor` — zobrazí celý obsah
 - `less soubor` — stránkování
-- `head -n 20 soubor` — začátek
-- `tail -f log.txt` — živé logy
+- `head -n 20 soubor` — prvních 20 řádků
+- `tail -f log.txt` — živé sledování logu
 
 ## 🔍 Hledání
-- `grep "text" soubor` — hledání
-- `grep -r "text" /cesta` — rekurzivně
-- `find /cesta -name "*.log"` — hledání souborů
+- `grep "text" soubor` — hledání v souboru
+- `grep -r "text" /cesta` — rekurzivní hledání
+- `find /cesta -name "*.log"` — hledání souborů podle jména
 
 ## 🔑 Práva
-- `chmod 755 soubor` — práva
-- `chown user:group soubor` — vlastník
-- `ls -l` — zobrazí práva
+- `chmod 755 soubor` — změna práv
+- `chown user:group soubor` — změna vlastníka
+- `ls -l` — zobrazí práva a vlastníky
 
 ## 🌐 Síť
-- `ping seznam.cz` — test
+- `ping seznam.cz` — test připojení
 - `ip a` — síťová rozhraní
-- `curl URL` — stáhne obsah
+- `curl URL` — stáhne obsah stránky
 - `wget URL` — stáhne soubor
 
 ## 🧰 Ostatní
-- `man příkaz` — manuál
-- `history` — historie
-- `sudo příkaz` — root
-- `nano soubor` — editor
+- `man příkaz` — manuálová stránka
+- `history` — historie příkazů
+- `sudo příkaz` — spustí příkaz jako root
+- `nano soubor` — jednoduchý textový editor
